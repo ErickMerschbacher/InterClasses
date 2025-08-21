@@ -1,22 +1,52 @@
-html {
-  font-size: 14px;
+﻿html {
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+}
+
+.img-fixed {
+    position: fixed;
+    bottom: 0; /* gruda no fundo certinho */
+    left: 10px;
+    width: 550px;
+    height: auto;
+    z-index: -10; /* joga pra trás do rodapé e outros elementos */
+    z-index: -10; /* fica atrás do footer e do resto da página */
+}
+
+.img-sesi {
+    display: block; /* transforma em bloco */
+    margin: 0 auto; /* margens automáticas centralizam */
+    width: 300px; /* controla o tamanho */
+    height: auto;
+}
+
+body {
+    /* Gradiente diagonal: vermelho escuro → preto */
+    background: linear-gradient(135deg, #8B0000, #000000);
+    min-height: 100vh; /* ocupa toda a altura da tela */
+    color: white; /* texto legível sobre o fundo escuro */
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.85); /* mantém leve transparência */
+    border: none; /* remove borda padrão do card */
 }
